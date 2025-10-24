@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Restaurant - Delicious Indian & Pakistani Cuisine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glassmorphism">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-utensils"></i> Saffron Restaurant
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservations">Book</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero parallax">
+        <div class="hero-overlay">
+            <div class="container text-center text-white">
+                <h1 class="display-3 fw-bold animate-fade-in-up">Welcome to Saffron</h1>
+                <p class="lead animate-fade-in-up delay-1">Authentic Indian & Pakistani Flavors</p>
+                <a href="#menu" class="btn btn-warning btn-lg animate-pulse mt-3">
+                    <i class="fas fa-utensils"></i> Explore Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 animate-slide-right">
+                <h2>Our Story</h2>
+                <p class="lead">Established in 2010, Saffron Restaurant brings the rich aromas and bold flavors of Indian and Pakistani cuisine to your table. Our family recipes, passed down through generations, ensure every dish is a masterpiece of tradition and taste.</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-fire"></i>
+                        <span>Authentic Recipes</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <span>Experienced Chefs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 animate-slide-left">
+                <img src="https://picsum.photos/500/400?random=1" alt="About Saffron" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="animate-slide-up">Our Menu</h2>
+                <p class="animate-slide-up delay-1">Indulge in our curated selection of dishes</p>
+            </div>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs justify-content-center mb-4" id="menuTabs">
+                <li class="nav-item"><a class="nav-link active" href="#starters">Starters</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mains">Main Course</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desserts">Desserts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#beverages">Beverages</a></li>
+            </ul>
+
+            <!-- Starters -->
+            <div id="starters" class="tab-pane active">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up">
+                            <img src="https://picsum.photos/300/200?random=2" alt="Samosa">
+                            <div class="card-body">
+                                <h5>Samosa</h5>
+                                <p>Spicy potato and meat-filled pastry</p>
+                                <span class="price">$5.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up delay-1">
+                            <img src="https://picsum.photos/300/200?random=3" alt="Pakora">
+                            <div class="card-body">
+                                <h5>Pakora</h5>
+                                <p>Crispy fritters with veggies & cheese</p>
+                                <span class="price">$4.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Course -->
+            <div id="mains" class="tab-pane">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up">
+                            <img src="https://picsum.photos/300/200?random=4" alt="Biryani">
+                            <div class="card-body">
+                                <h5>Chicken Biryani</h5>
+                                <p>Aromatic spiced rice with chicken</p>
+                                <span class="price">$12.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up delay-1">
+                            <img src="https://picsum.photos/300/200?random=5" alt="Butter Chicken">
+                            <div class="card-body">
+                                <h5>Butter Chicken</h5>
+                                <p>Tender chicken in creamy tomato gravy</p>
+                                <span class="price">$11.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up delay-2">
+                            <img src="https://picsum.photos/300/200?random=6" alt="Dal Makhani">
+                            <div class="card-body">
+                                <h5>Dal Makhani</h5>
+                                <p>Slow-cooked lentils with butter</p>
+                                <span class="price">$8.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up delay-3">
+                            <img src="https://picsum.photos/300/200?random=7" alt="Paneer Tikka">
+                            <div class="card-body">
+                                <h5>Paneer Tikka</h5>
+                                <p>Grilled cottage cheese skewers</p>
+                                <span class="price">$10.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div id="desserts" class="tab-pane">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up">
+                            <img src="https://picsum.photos/300/200?random=8" alt="Gulab Jamun">
+                            <div class="card-body">
+                                <h5>Gulab Jamun</h5>
+                                <p>Warm syrupy milk dumplings</p>
+                                <span class="price">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up delay-1">
+                            <img src="https://picsum.photos/300/200?random=9" alt="Kulfi">
+                            <div class="card-body">
+                                <h5>Kulfi</h5>
+                                <p>Traditional fruit-flavored ice cream</p>
+                                <span class="price">$4.49</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div id="beverages" class="tab-pane">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up">
+                            <img src="https://picsum.photos/300/200?random=10" alt="Lassi">
+                            <div class="card-body">
+                                <h5>Mango Lassi</h5>
+                                <p>Creamy yogurt drink with mango</p>
+                                <span class="price">$3.49</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="menu-card animate-slide-up delay-1">
+                            <img src="https://picsum.photos/300/200?random=11" alt="Chai">
+                            <div class="card-body">
+                                <h5>Masala Chai</h5>
+                                <p>Spiced Indian tea</p>
+                                <span class="price">$2.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate-slide-up">Photo Gallery</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="gallery-item animate-zoom-in">
+                        <img src="https://picsum.photos/400/300?random=12" alt="Biryani">
+                        <div class="overlay">
+                            <p>Biryani Delight</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="gallery-item animate-zoom-in delay-1">
+                        <img src="https://picsum.photos/400/300?random=13" alt="Butter Chicken">
+                        <div class="overlay">
+                            <p>Butter Chicken</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="gallery-item animate-zoom-in delay-2">
+                        <img src="https://picsum.photos/400/300?random=14" alt="Desserts">
+                        <div class="overlay">
+                            <p>Sweet Endings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="gallery-item animate-zoom-in delay-3">
+                        <img src="https://picsum.photos/400/300?random=15" alt="Interior">
+                        <div class="overlay">
+                            <p>Cozy Ambiance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="gallery-item animate-zoom-in delay-4">
+                        <img src="https://picsum.photos/400/300?random=16" alt="Starters">
+                        <div class="overlay">
+                            <p>Appetizers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="gallery-item animate-zoom-in delay-5">
+                        <img src="https://picsum.photos/400/300?random=17" alt="Drinks">
+                        <div class="overlay">
+                            <p>Refreshing Drinks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate-slide-up">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card animate-slide-up">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Best Biryani in town! Authentic flavors."</p>
+                        <h6>- John Doe</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card animate-slide-up delay-1">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The service is excellent and food is fresh."</p>
+                        <h6>- Jane Smith</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card animate-slide-up delay-2">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Love the Gulab Jamun! Must-try desserts."</p>
+                        <h6>- Mike Johnson</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animate-slide-right">
+                    <h2>Make a Reservation</h2>
+                    <p>Book your table today and enjoy an unforgettable dining experience.</p>
+                </div>
+                <div class="col-lg-6 animate-slide-left">
+                    <form id="reservation-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="time" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select class="form-select" required>
+                                    <option value="">Guests</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3+</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Special Requests"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">Book Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section container my-5">
+        <h2 class="text-center mb-5 animate-slide-up">Get in Touch</h2>
+        <div class="row">
+            <div class="col-md-6 animate-slide-right">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h5>Address</h5>
+                        <p>123 Food Street, Karachi, Pakistan</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h5>Phone</h5>
+                        <p>+92 300 123 4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p>info@saffronrestaurant.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h5>Hours</h5>
+                        <p>Mon-Sun: 11 AM - 11 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 animate-slide-left">
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Saffron Restaurant</h5>
+                    <p>Bringing authentic flavors to your table since 2010.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="mt-3">&copy; 2025 Saffron Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

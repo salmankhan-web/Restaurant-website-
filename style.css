@@ -1,0 +1,151 @@
+/* Base & Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; scroll-behavior: smooth; }
+
+/* Glassmorphism Navbar - Fixed & Centered */
+.navbar { 
+    background: rgba(255,255,255,0.1); 
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255,255,255,0.2); 
+    padding: 1rem 0; 
+    width: 100%; 
+}
+.glassmorphism { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1030; 
+}
+.navbar .container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.navbar-brand { 
+    margin: 0; 
+    text-align: center; 
+}
+.navbar-nav { 
+    margin: 0; 
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+/* Hero & Parallax - Centered & Responsive */
+.hero { 
+    height: 100vh; 
+    background: url('https://picsum.photos/1920/1080?random=18') center/cover no-repeat fixed; /* Fixed center background */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; /* Center the entire section */
+    position: relative; 
+    width: 100%; 
+    overflow: hidden; 
+}
+.parallax { background-attachment: fixed; }
+.hero-overlay { 
+    background: rgba(0,0,0,0.4); 
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; /* Center overlay content */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+.hero .container { 
+    max-width: 800px; /* Limit width for better centering on large screens */
+    text-align: center; 
+    padding: 0 1rem; 
+}
+
+/* Sections */
+.about-section, .menu-section, .gallery-section, .testimonials-section, .reservations-section, .contact-section { padding: 80px 0; }
+.animate-slide-up { opacity: 0; transform: translateY(50px); transition: all 0.8s ease; }
+.animate-slide-up.visible { opacity: 1; transform: translateY(0); }
+.animate-slide-right { opacity: 0; transform: translateX(50px); transition: all 0.8s ease; }
+.animate-slide-right.visible { opacity: 1; transform: translateX(0); }
+.animate-slide-left { opacity: 0; transform: translateX(-50px); transition: all 0.8s ease; }
+.animate-slide-left.visible { opacity: 1; transform: translateX(0); }
+.animate-fade-in-up { opacity: 0; transform: translateY(30px); animation: fadeInUp 1s ease forwards; }
+.animate-pulse { animation: pulse 2s infinite; }
+.animate-zoom-in { opacity: 0; transform: scale(0.8); transition: all 0.6s ease; }
+.animate-zoom-in.visible { opacity: 1; transform: scale(1); }
+
+/* Menu Cards */
+.menu-card { border: none; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; background: white; }
+.menu-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+.menu-card img { height: 200px; width: 100%; object-fit: cover; }
+.card-body { padding: 1rem; }
+.price { color: #ff6b6b; font-weight: bold; font-size: 1.2rem; display: block; margin-top: 0.5rem; }
+
+/* Gallery */
+.gallery-item { position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.gallery-item img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.5s ease; }
+.gallery-item:hover img { transform: scale(1.1); }
+.overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; transform: translateY(100%); transition: transform 0.3s ease; }
+.gallery-item:hover .overlay { transform: translateY(0); }
+
+/* Testimonials */
+.testimonial-card { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+.stars { color: #ffc107; margin-bottom: 1rem; font-size: 1.2rem; }
+
+/* Features */
+.features { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.feature-item { display: flex; align-items: center; gap: 0.5rem; color: #ff6b6b; }
+
+/* Forms */
+form input, form select, form textarea { border-radius: 10px; border: 1px solid #ddd; }
+
+/* Social Links */
+.social-links a { font-size: 1.5rem; transition: color 0.3s; }
+.social-links a:hover { color: #ff6b6b; }
+
+/* Contact Info */
+.contact-info { background: #f8f9fa; padding: 2rem; border-radius: 15px; }
+.info-item { margin-bottom: 1.5rem; }
+.info-item i { font-size: 1.5rem; color: #ff6b6b; margin-bottom: 0.5rem; display: block; }
+.info-item h5 { color: #333; margin-bottom: 0.5rem; }
+
+/* Keyframes */
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Enhanced Responsive - Desktop, Tablet, Mobile */
+@media (max-width: 1199px) { /* Large Desktop */
+    .hero .container { max-width: 700px; }
+    .navbar .container { max-width: 1000px; }
+}
+
+@media (max-width: 991px) { /* Tablet */
+    .hero { height: 80vh; }
+    .display-3 { font-size: 2.8rem; }
+    .hero .container { max-width: 600px; padding: 0 2rem; }
+    .navbar .container { padding: 0 1rem; }
+    .parallax { background-attachment: scroll; } /* Disable parallax on smaller screens */
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .hero { height: 70vh; background-attachment: scroll; }
+    .display-3 { font-size: 2.5rem; }
+    .hero .container { max-width: 100%; padding: 0 1rem; }
+    .features { justify-content: center; flex-direction: column; }
+    .menu-card:hover { transform: none; }
+    .navbar-collapse { text-align: center; } /* Center nav items on mobile */
+}
+
+@media (max-width: 576px) { /* Small Mobile */
+    .navbar-brand { font-size: 1.2rem; }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#ff6b6b, #ee5a24); border-radius: 4px; }
